@@ -74,7 +74,8 @@ class GoString():
 
 class Board():
 	"""
-	docstring for Board
+	This describes the board including the number of rows and columns, how to
+	place a stone, and stones currently on the board
 	"""
 	
 	def __init__(self, num_rows, num_cols):
