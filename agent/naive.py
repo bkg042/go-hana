@@ -8,6 +8,9 @@ Copyright: GNU GPLv3
 This is the naive, absolute beginner go bot, it will randomly select moves
 that do not fill its own eyes, thats it.
 
+Just for clarity's sake, this bot will not learn. It will play randomly no 
+matter what you do (or an opponenet bot does). At this point its mainly a 
+way to test our setup
 """
 
 import random
