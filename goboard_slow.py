@@ -206,7 +206,7 @@ class GameState():
 		return False
 
 	def is_valid_move(self, move):
-		if self.is_over:
+		if self.is_over():
 			return False
 		if move.is_pass or move.is_resign:
 			return True

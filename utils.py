@@ -20,7 +20,7 @@ COLS = "ABCDEFGHJKLMNOPQRST"
 STONE_TO_CHAR = {
 	None : " . ",
 	gotypes.Player.black : ' x ',
-	gotypes.Player.black : ' o ',
+	gotypes.Player.white : ' o ',
 }
 
 def print_move(player, move):
