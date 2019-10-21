@@ -10,7 +10,7 @@ the bot or setting up bot v bot games.
 
 """
 
-from go-hana import gotypes
+from go_hana import gotypes
 
 #using European alphebetizing of the 19 columns in go (note no I)
 COLS = "ABCDEFGHJKLMNOPQRST"

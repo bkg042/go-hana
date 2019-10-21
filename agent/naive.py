@@ -14,10 +14,10 @@ way to test our setup
 """
 
 import random
-from go-hana.agent.base import Agent
-from go-hana.agent.helpers import is_point_an_eye
-from go-hana.goboard_slow import Move
-from go-hana.gotypes import Point
+from go_hana.agent.base import Agent
+from go_hana.agent.helpers import is_point_an_eye
+from go_hana.goboard_slow import Move
+from go_hana.gotypes import Point
 
 class RandomBot(Agent):
 	"""

@@ -8,7 +8,7 @@ Copyright: GNU GPLv3
 These helper methods will help the gobot to play
 
 """
-from go-hana.gotypes import Point
+from go_hana.gotypes import Point
 
 def is_point_an_eye(board, point, color):
 	if board.get(point) is not None:

@@ -10,7 +10,7 @@ This will contain the rules and gamestate of a go game
 """
 
 import copy
-from go-hana.gotypes import Player
+from go_hana.gotypes import Player
 
 class Move():
 	"""
