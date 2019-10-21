@@ -20,22 +20,22 @@ class Move():
 	
 	def __init__(self, point=None, is_pass=False, is_resign=False):
 		assert(point is not None) ^ is_pass ^ is_resign
- 		self.point = point
- 		self.is_play = (self.point is not None)
- 		self.is_pass = is_pass
- 		self.is_resign = is_resign
+		self.point = point
+		self.is_play = (self.point is not None)
+		self.is_pass = is_pass
+		self.is_resign = is_resign
 
- 	@classmethod
- 	def play(cls, point):
- 		return Move(point=point)
- 	
- 	@classmethod
- 	def pass_turn(cls):
- 		return Move(is_pass=True)
+	@classmethod
+	def play(cls, point):
+		return Move(point=point)
+	
+	@classmethod
+	def pass_turn(cls):
+		return Move(is_pass=True)
 
- 	@classmethod
- 	def resign(cls):
- 		return Move(is_resign=True)
+	@classmethod
+	def resign(cls):
+		return Move(is_resign=True)
 
 class GoString():
 	"""
@@ -123,7 +123,8 @@ class Board():
 	def is_on_grid(self, point):
 		return 1 <= point.row <= self.num_rows and \
 			1 <= point.col <= self.num_cols
-	def get(self, point)
+
+	def get(self, point):
 		string = self._grid.get(point)
 		if string is None:
 			return None
@@ -192,7 +193,7 @@ class GameState():
 		next_situation = (player.other, next_board)
 		past_state = self.previous_state
 		while past_state is not None:
-			if past_state.situation == next_situation
+			if past_state.situation == next_situation:
 				return True
 			past_state = past_state.previous_state
 		return False

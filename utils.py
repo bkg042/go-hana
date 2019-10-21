@@ -17,11 +17,11 @@ COLS = "ABCDEFGHJKLMNOPQRST"
 
 #This dictionary sets the output representations of your empty spaces, white,
 #and black stones.
-STONE_TO_CHAR = [
+STONE_TO_CHAR = {
 	None : " . ",
-	gotypes.Player.black = ' x ',
-	gotypes.Player.black = ' o ',
-]
+	gotypes.Player.black : ' x ',
+	gotypes.Player.black : ' o ',
+}
 
 def print_move(player, move):
 	"""
@@ -36,7 +36,7 @@ def print_move(player, move):
 	print ('%s %s' % (player, move_str))
 
 def print_board(board):
-		"""
+	"""
 	prints the board in a human readable format
 	"""
 	for row in range(board.num_rows, 0, -1):
